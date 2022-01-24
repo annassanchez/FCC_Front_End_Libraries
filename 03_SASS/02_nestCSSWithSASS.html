@@ -1,0 +1,50 @@
+<!--
+    sass allows nesting of css rules, which is a useful way of organizing a style sheet
+    normally, wach element is targeted on a different line to syle, like so:
+    "
+    nav {
+	    background-color: red;
+    }
+
+    nav ul {
+        list-style: none;
+    }
+
+    nav ul il {
+        display: inline-block;
+    }
+    "
+    for a large project, the css file will have many lines and rules
+    this is where nesting can help organize your code by placing child style rules within the respective parent elements
+    "
+    nav {
+        background-color: red;
+        ul {
+            list-style: none;
+            li {
+                display: inline-block;
+            }
+        }
+    } 
+    "
+-->
+<!--
+    use the nesting techniques shown above to re-organize the css rules for both children of the ".blog-post" element
+    for testing purposes, the "h1" should come before the "p" element
+-->
+<style type='text/scss'>
+    .blog-post {
+      h1 {
+        text-align: center;
+        color: blue;
+      } 
+      p {
+        font-size: 20px;
+      }
+    } 
+  </style>
+  
+  <div class="blog-post">
+    <h1>Blog Title</h1>
+    <p>This is a paragraph</p>
+  </div>
