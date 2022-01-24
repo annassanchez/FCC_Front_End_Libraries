@@ -1,0 +1,17 @@
+<!--
+    partials in sass are separate files that hold segments of css code
+    these are imported and used in other sass files
+    this is a great way to group similar code into a module to keep it organized
+    names for partials with the underscore character ("_"), which tells sass it is a small segment of css and not to convert it into a css file
+    also sass files end with the ".scss" file extension
+    to bring the code in the partial into another sass file, use the "@import" directive
+    for example, if all your mixins are samed in a partial named "_mixins.scss", and they are needed in the "main.css" file, this is how to use them in the main file:
+    "@import 'mixins'"
+    note that the underscore and file extension are not needed in the "import" statement -- sass understands it is a partial
+    once a partial is imported into a file, al variables, mixins, and other code are available to use
+-->
+<!--
+    write an "@import" statement to import a partial named "_variables.scss" into the "main.css" file
+-->
+<!-- The main.scss file -->
+@import 'variables'
