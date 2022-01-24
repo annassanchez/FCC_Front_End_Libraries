@@ -1,0 +1,45 @@
+<!--
+    one feature that's different than css is it uses variables
+    they are declared and set to store data, similar to js
+    in js, variables are defined by using the let and const keywords
+    in sass, variables with a "$" followed by the variable name
+    here are a couple of examples:
+    "$main-fonts: Arial, sans-serif;"
+    "$headings-color: green;"
+    and to use the variables:
+    "
+    h1 {
+        font-family: $main-fonts;
+        color: $heading-color;
+    } 
+    "
+    one example where variables are useful is when a number of elements need to be the same colour
+    if that colour has changed, the only place to edit the code is the variable value
+-->
+<!--
+    create a vaiable "$text-color" and set it to "red"
+    then change the value of the "color" property for the ".blog-post" and "h2" to the "$text-color" variable
+-->
+<style type='text/scss'>
+    $text-color: red;
+    .header{
+      text-align: center;
+    }
+    .blog-post, h2 {
+      color: $text-color;
+    }
+</style>
+  
+  <h1 class="header">Learn Sass</h1>
+  <div class="blog-post">
+    <h2>Some random title</h2>
+    <p>This is a paragraph with some random text in it</p>
+  </div>
+  <div class="blog-post">
+    <h2>Header #2</h2>
+    <p>Here is some more random text.</p>
+  </div>
+  <div class="blog-post">
+    <h2>Here is another header</h2>
+    <p>Even more random text within a paragraph</p>
+  </div>
